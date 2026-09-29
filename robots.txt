@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hyovation.com/sitemap.xml
