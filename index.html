@@ -97,6 +97,17 @@ section.block{padding:120px 0}
 .piece p{margin-top:12px;color:var(--muted)}
 .piece .price{margin-top:18px;font-size:15px;color:var(--gold-text)}
 
+
+/* Heritage */
+.heritage{background:#EFE9DE}
+.crafts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.craft{background:var(--paper);border:1px solid var(--line);padding:40px 34px;display:flex;flex-direction:column;gap:14px}
+.craft .zh{font-family:'Noto Serif SC','Songti SC','STSong',serif;font-size:30px;color:var(--gold-text);letter-spacing:.08em}
+.craft h3{font-size:30px}
+.craft p{color:var(--muted);font-size:16px}
+.heritage .promise{margin-top:40px;max-width:760px;font-family:var(--serif);font-style:italic;font-size:24px;line-height:1.45;color:var(--navy)}
+@media (max-width:980px){.crafts{grid-template-columns:1fr}}
+
 /* Studio */
 .studio{background:var(--navy);color:var(--ivory)}
 .studio .grid{display:grid;grid-template-columns:5fr 7fr;gap:80px}
@@ -195,6 +206,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-of
     </a>
     <nav class="nav" aria-label="Main">
       <a href="#collections">Collections</a>
+      <a href="#heritage">Heritage</a>
       <a href="#studio">Studio</a>
       <a href="#process">Process</a>
       <a class="btn btn-light" href="#consult">Book a consultation</a>
@@ -277,6 +289,38 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-of
     </div>
   </section>
 
+
+  <section class="block heritage" id="heritage">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="label">Heritage craft collection</span>
+          <h2>Centuries-old crafts, made for modern milestones</h2>
+        </div>
+        <p>For the honors that deserve more than crystal, we commission pieces from artisan studios in China that have practiced these crafts for generations.</p>
+      </div>
+      <div class="crafts">
+        <article class="craft">
+          <span class="zh" lang="zh">琉璃</span>
+          <h3>Pâte de verre glass</h3>
+          <p>Glass cast in a lost-wax mold, so color and light seem to glow from within. Every piece carries the small variations of the hand.</p>
+        </article>
+        <article class="craft">
+          <span class="zh" lang="zh">景泰蓝</span>
+          <h3>Cloisonné enamel</h3>
+          <p>Fine copper wire shaped by hand, filled with enamel, fired and polished again and again. Ideal for medals, emblems and statuette bases.</p>
+        </article>
+        <article class="craft">
+          <span class="zh" lang="zh">青铜</span>
+          <h3>Cast bronze</h3>
+          <p>Lost-wax casting with a hand-applied patina, for sculptures and perpetual trophies built to last generations.</p>
+        </article>
+      </div>
+      <p class="promise">Each heritage piece is signed by its artisan, individually numbered and accompanied by a certificate that tells the story of the craft.</p>
+      <p class="price" style="margin-top:16px;font-size:15px;color:var(--gold-text)">Heritage commissions from $3,000 per piece</p>
+    </div>
+  </section>
+
   <section class="block studio" id="studio">
     <div class="wrap grid">
       <div class="intro">
@@ -326,7 +370,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-of
       </div>
       <div class="materials">
         <div><h3>Optical crystal</h3><p>Laser-etched inside and hand-polished.</p></div>
-        <div><h3>Cast bronze</h3><p>Poured by US foundries and patinated by hand.</p></div>
+        <div><h3>Cast bronze</h3><p>Lost-wax cast and patinated by hand.</p></div>
         <div><h3>Sterling silver</h3><p>For perpetual cups and heirloom pieces.</p></div>
         <div><h3>Hardwood and metal</h3><p>Walnut bases with brushed brass or steel.</p></div>
       </div>
@@ -395,6 +439,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-of
             <option>Signature event statuette</option>
             <option>Perpetual club trophy</option>
             <option>Milestone art</option>
+            <option>Heritage craft piece</option>
             <option>Not sure yet</option>
           </select>
         </div>
