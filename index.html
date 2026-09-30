@@ -108,6 +108,21 @@ section.block{padding:120px 0}
 .heritage .promise{margin-top:40px;max-width:760px;font-family:var(--serif);font-style:italic;font-size:24px;line-height:1.45;color:var(--navy)}
 @media (max-width:980px){.crafts{grid-template-columns:1fr}}
 
+
+/* Story */
+.story .grid{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+.story h2{font-size:clamp(38px,4.6vw,56px);margin-top:10px}
+.story .text p{color:var(--muted);font-size:18px;line-height:1.7}
+.story .text p + p{margin-top:20px}
+.story .text p.lead{font-family:var(--serif);font-size:28px;line-height:1.4;color:var(--navy)}
+.founders{margin-top:48px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.founders div{border-top:2px solid var(--navy);padding-top:18px}
+.founders h3{font-size:28px}
+.founders .role{font-size:15px;color:var(--gold-text);margin-top:4px}
+.founders p{margin-top:10px;color:var(--muted);font-size:16px}
+@media (max-width:980px){.story .grid{grid-template-columns:1fr;gap:32px}}
+@media (max-width:760px){.founders{grid-template-columns:1fr}}
+
 /* Studio */
 .studio{background:var(--navy);color:var(--ivory)}
 .studio .grid{display:grid;grid-template-columns:5fr 7fr;gap:80px}
@@ -207,7 +222,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-of
     <nav class="nav" aria-label="Main">
       <a href="#collections">Collections</a>
       <a href="#heritage">Heritage</a>
-      <a href="#studio">Studio</a>
+      <a href="#story">Our story</a>
       <a href="#process">Process</a>
       <a class="btn btn-light" href="#consult">Book a consultation</a>
     </nav>
@@ -318,6 +333,35 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-of
       </div>
       <p class="promise">Each heritage piece is signed by its artisan, individually numbered and accompanied by a certificate that tells the story of the craft.</p>
       <p class="price" style="margin-top:16px;font-size:15px;color:var(--gold-text)">Heritage commissions from $5,000 per piece</p>
+    </div>
+  </section>
+
+
+  <section class="block story" id="story">
+    <div class="wrap grid">
+      <div>
+        <span class="label">Our story</span>
+        <h2>It started in our living room.</h2>
+      </div>
+      <div class="text">
+        <p class="lead">In July 2026, we watched the World Cup final together at home in California.</p>
+        <p>A little more than three years earlier, we had left China to start over: a mother and her son, learning a new country, a new language of daily life, building everything from the ground up.</p>
+        <p>When the final whistle blew and the captain raised the trophy, millions of people were watching a single golden object carry the weight of a lifetime of work. And at that moment, we had the same thought: what if an honor like this were made the way beautiful things are made where we come from? By hand, in cloisonné enamel, fine porcelain or cast bronze, crafts passed from master to apprentice for centuries.</p>
+        <p>We know something about the long road behind a breakthrough. Anyone who has started over does: the years no one sees, the small victories, the day it finally comes together. That day deserves more than a catalog plaque.</p>
+        <p>So we founded HyOvation, to honor the people who build extraordinary things with pieces as rare as their achievement. Each one is designed from scratch, made by an artisan's hands, and delivered by us, in person.</p>
+        <div class="founders">
+          <div>
+            <h3>Jack Wei</h3>
+            <p class="role">Co-founder</p>
+            <p>Jack leads client relationships, the brand and the digital experience, bringing a background in marketing and a love of technology and business.</p>
+          </div>
+          <div>
+            <h3>Tina Zhang</h3>
+            <p class="role">Co-founder</p>
+            <p>Tina leads artisan partnerships, craftsmanship and quality. An entrepreneur who built her own business in Mountain View, she works in English, Mandarin and Russian.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
