@@ -116,8 +116,9 @@ section.block{padding:120px 0}
 .story .text p + p{margin-top:20px}
 .story .text p.lead{font-family:var(--serif);font-size:28px;line-height:1.4;color:var(--navy)}
 .founders{margin-top:48px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
-.founders div{border-top:2px solid var(--navy);padding-top:18px}
+.founders > div{border-top:2px solid var(--navy);padding-top:18px}
 .founders h3{font-size:28px}
+.founders img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;background:#E2DBCF;margin-bottom:20px;filter:saturate(.9)}
 .founders .role{font-size:15px;color:var(--gold-text);margin-top:4px}
 .founders p{margin-top:10px;color:var(--muted);font-size:16px}
 @media (max-width:980px){.story .grid{grid-template-columns:1fr;gap:32px}}
@@ -351,11 +352,13 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-of
         <p>So we founded HyOvation, to honor the people who build extraordinary things with pieces as rare as their achievement. Each one is designed from scratch, made by an artisan's hands, and delivered by us, in person.</p>
         <div class="founders">
           <div>
+            <img src="images/jack-wei.jpeg" alt="Jack Wei, co-founder of HyOvation" width="400" height="500" loading="lazy" onerror="this.style.display='none'">
             <h3>Jack Wei</h3>
             <p class="role">Co-founder</p>
             <p>Jack leads client relationships, the brand and the digital experience, bringing a background in marketing and a love of technology and business.</p>
           </div>
           <div>
+            <img src="images/tina-zhang.jpeg" alt="Tina Zhang, co-founder of HyOvation" width="400" height="500" loading="lazy" onerror="this.style.display='none'">
             <h3>Tina Zhang</h3>
             <p class="role">Co-founder</p>
             <p>Tina leads artisan partnerships, craftsmanship and quality. An entrepreneur who built her own business in Mountain View, she works in English, Mandarin and Russian.</p>
